@@ -9,9 +9,9 @@
 
 int main(void)
 {
-	int n;
-
-      printf("%d is negative\n", n);
-
+	char low;
+	for (low = 'a'; low <= 'z'; low++)
+		putchar(low);
+		putchar('\n');
 	return (0);
 }
