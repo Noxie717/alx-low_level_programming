@@ -9,22 +9,22 @@ void print_number(int n)
 
 	if (n >= 0)
 	{
-		x = n;
+		a = n;
 	}
 	else
 	{
 		_putchar(45);
-		x = n * -1;
+		a = n * -1;
 	}
 
-	y = x;
+	b = a;
 	c = 1;
 
-	while (y > 9)
+	while (b > 9)
 	{
-		y /= 10;
+		b /= 10;
 		c *= 10;
 	}
 	for (; c >= 1; c /= 10)
-		_putchar(((x / c) % 10) + 48);
+		_putchar(((a / c) % 10) + 48);
 }
