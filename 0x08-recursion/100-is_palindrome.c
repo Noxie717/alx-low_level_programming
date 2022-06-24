@@ -35,7 +35,7 @@ int my_pal(char *s, int l)
 	if (*s == *(s + l))
 	{
 		if (l <= 0)
-			 return (1);
+			return (1);
 		else
 			return (my_pal(++s, l - 2));
 	}
